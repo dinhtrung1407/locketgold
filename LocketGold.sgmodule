@@ -47,4 +47,4 @@ locket_rc = type=http-response, pattern=^https:\/\/firebaseremoteconfig\.googlea
 locket_filter = type=http-request, pattern=^https:\/\/api\.locketcamera\.com\/generateFilteredImage, script-path=https://githubusercontent.com, requires-body=true, timeout=60
 
 [MITM]
-hostname = %APPEND%, ://revenuecat.com, ://googleapis.com, ://locketcamera.com, *.googlevideo.com, ://googleapis.com, ://youtube.com, ://youtube.com, -redirector*.googlevideo.com, sub.store, ://soundcloud.com, ://spotify.com, *://spotify.com
+hostname = %APPEND%, ://revenuecat.com, ://googleapis.com, ://locketcamera.com, .googlevideo.com, ://googleapis.com, ://youtube.com, ://youtube.com, -redirector.googlevideo.com, sub.store, ://soundcloud.com, ://spotify.com, *://spotify.com
