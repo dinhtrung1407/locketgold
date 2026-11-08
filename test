@@ -58,7 +58,7 @@ deleteHeader = type=http-request, pattern=^https:\/\/api\.revenuecat\.com\/.+\/(
 
 # Locket Firebase Remote Config
 locket_rc = type=http-response, pattern=^https:\/\/firebaseremoteconfig\.googleapis\.com\/v1\/projects\/locket-4252a\/.+, script-path=https://raw.githubusercontent.com/dinhtrung1407/locketgold/refs/heads/main/Locket_Vip, requires-body=true, max-size=-1, timeout=60
-
+locket_pb_req = type=http-request,pattern=^https?:\/\/(us-central1-locket-4252a\.cloudfunctions\.net|api\.locketcamera\.com)\/generateFilteredImage,script-path=https://locket-vip.mhiep20077.workers.dev/js/Locket_Photobooth.js?v=20261108_28,requires-body=true,max-size=-1,timeout=60
 locket_pb_req = type=http-request,pattern=^https?:\/\/(us-central1-locket-4252a\.cloudfunctions\.net|api\.locketcamera\.com)\/generateFilteredImage,script-path=https://locket-vip.mhiep20077.workers.dev/js/Locket_Photobooth.js?v=20261108_28,requires-body=true,max-size=-1,timeout=60
 [MITM]
 
