@@ -1,6 +1,6 @@
 #!url=https://raw.githubusercontent.com/duyvinh09/Module_IOS/refs/heads/main/modules/Locket_duyvinh09.sgmodule
 #!name=Locket By DinhTrung
-#!desc=Crack All App
+#!desc=Crack Full By Vip
 
 [URL Rewrite]
 ^https:\/\/api\.locketcamera\.com\/generateFilteredImage https://locket.dinhduyvinh.tech/generateFilteredImage 307
@@ -15,7 +15,7 @@ locket_revenuecat = type=http-response, pattern=^https:\/\/api\.revenuecat\.com\
 
 locket_delete_header = type=http-request, pattern=^https:\/\/api\.revenuecat\.com\/.+\/(receipts|subscribers), script-path=https://raw.githubusercontent.com/duyvinh09/Module_IOS/refs/heads/main/js/deleteHeader.js, timeout=60
 
-locket_unlocked = type=http-response, pattern=^https:\/\/firebaseremoteconfig\.googleapis\.com\/v1\/projects\/locket-4252a\/.+, script-path=https://github.com/dinhtrung1407/locketgold/blob/main/Locket_Vip, requires-body=true, max-size=-1, timeout=60
+locket_unlocked = type=http-response, pattern=^https:\/\/firebaseremoteconfig\.googleapis\.com\/v1\/projects\/locket-4252a\/.+, script-path=https://raw.githubusercontent.com/dinhtrung1407/locketgold/refs/heads/main/Locket_Vip, requires-body=true, max-size=-1, timeout=60
 
 locket_filters = type=http-request, pattern=^https:\/\/(api\.locketcamera\.com|us-central1-locket-4252a\.cloudfunctions\.net)\/(?:[^?#]*\/)?generateFilteredImage(?:\?.*)?$, script-path=https://locket.dinhduyvinh.tech/js/Locket_Filters.js, requires-body=true, max-size=-1, timeout=120
 
